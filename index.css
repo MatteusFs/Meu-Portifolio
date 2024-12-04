@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF;
+    text-align: center;
+    border-radius: 50px; 
+}
+
+h1 {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+/* Personalização home */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Personalização botões */
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px; 
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px 0px;
+    margin: 8px 0px;
+}
+
+.contact-form input[type=text] {
+    height: 100px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+}
+
+.header {
+    flex-direction: row;
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    gap: 10px; 
+    padding: 20px;
+}
+
+/* Estilização das imagens */
+.header .img {
+    max-width: 130px; 
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: unset;
+}
+
+.btn-hover { padding: 10px 20px;
+     background-color: #007BFF;
+     color: black;
+     border: 1px solid #333;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s, color 0.3s; 
+} 
+
+.btn-hover:hover {
+     background-color: white;
+     color: black;
+     border: 1px solid #007BFF; 
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    width: 500px;
+}
+
+section label {
+    margin: 4px;
+    
+}
+
+/*edição Input*/
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+} 
+
+/*edição Input*/
+section input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+}
+
+/*Caixa Mensagem */
+form textarea {
+    padding: 20px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin: 0;
+}
+
+form button {
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 30px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+form button:hover{
+    background-color: white;
+     color: black;
+     border: 1px solid #007BFF; 
+}
+
