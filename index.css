@@ -183,6 +183,6 @@ form button:hover {
     }
 
     button {
-        width: 100%; /* Faz o botão ocupar toda a largura disponível em telas menores */
+        width: 50%; /* Faz o botão ocupar toda a largura disponível em telas menores */
     }
 }
