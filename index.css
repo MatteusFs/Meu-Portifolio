@@ -67,8 +67,8 @@ button {
 }
 
 .header {
-    flex-direction: colum;
     display: flex; 
+    flex-direction: column;
     flex-wrap: nowrap; 
     justify-content: flex-start; 
     gap: 10px; 
