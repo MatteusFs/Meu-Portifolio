@@ -2,14 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #007BFF;
     text-align: center;
-    border-radius: 50px; 
 }
 
 h1 {
@@ -53,8 +52,8 @@ nav ul li a:hover {
 
 .contact-form input {
     width: 100%;
-    padding: 8px 0px;
-    margin: 8px 0px;
+    padding: 8px;
+    margin: 8px 0;
 }
 
 .contact-form input[type=text] {
@@ -67,39 +66,41 @@ button {
 }
 
 .header {
-    display: flex; 
+    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; 
-    justify-content: flex-start; 
-    gap: 10px; 
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 10px;
     padding: 20px;
+    overflow-x: auto;
 }
 
 /* Estilização das imagens */
 .header .img {
-    max-width: 100px; 
+    max-width: 100px;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
     bottom: unset;
 }
 
-.btn-hover { padding: 10px 20px;
-     background-color: #007BFF;
-     color: black;
-     border: 1px solid #333;
-     border-radius: 5px;
-     cursor: pointer;
-     transition: background-color 0.3s, color 0.3s; 
-} 
+.btn-hover {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: black;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
 
 .btn-hover:hover {
-     background-color: white;
-     color: black;
-     border: 1px solid #007BFF; 
-    }
+    background-color: white;
+    color: black;
+    border: 1px solid #007BFF;
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -111,13 +112,13 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 45px;
-    width: 500px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 500px;
 }
 
 section label {
     margin: 4px;
-    
 }
 
 /*edição Input*/
@@ -146,17 +147,42 @@ form textarea {
 }
 
 form button {
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     font-size: 15px;
-    margin: 30px;
+    margin: 20px 0;
     border: 1px solid #333;
     border-radius: 5px;
 }
 
-form button:hover{
+form button:hover {
     background-color: white;
-     color: black;
-     border: 1px solid #007BFF; 
+    color: black;
+    border: 1px solid #007BFF;
 }
 
+#successMessage {
+    color: white;
+    margin-top: 20px;
+}
+
+/* Regras de Media Query */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Alinha as imagens verticalmente em telas menores */
+        overflow-x: hidden; /* Evita a rolagem horizontal em dispositivos móveis */
+    }
+
+    .header .img {
+        max-width: 100%; /* Faz as imagens ocuparem toda a largura disponível em telas menores */
+    }
+
+    section {
+        width: 90%; /* Ajusta a largura da seção para caber melhor em telas menores */
+        padding: 10px 15px;
+    }
+
+    button {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível em telas menores */
+    }
+}
