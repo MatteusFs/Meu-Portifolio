@@ -67,7 +67,7 @@ button {
 }
 
 .header {
-    flex-direction: row;
+    flex-direction: colum;
     display: flex; 
     flex-wrap: nowrap; 
     justify-content: flex-start; 
@@ -77,7 +77,7 @@ button {
 
 /* Estilização das imagens */
 .header .img {
-    max-width: 130px; 
+    max-width: 135px; 
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
